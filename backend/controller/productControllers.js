@@ -4,20 +4,20 @@ const getAllProducts = async (req, res) => {
     try {
         const products = await Product.find({});
 
-        res,json(products)
+        res.json(products)
     } catch (error) {
-        console.log('error products')
+        console.log('error product')
         res.status(500).json({message: "Server Error"})
     }
 }
 
 const getProductsById = async (req, res) => {
     try {
-        const products = await Product.findById(req.params.id);
+        const product = await Product.findById(req.params.id);
 
         res,json(product)
     } catch (error) {
-        console.log('error products')
+        console.log('error')
         res.status(500).json({message: "Server Error"})
     }
 }
