@@ -14,7 +14,7 @@ const products = [
         "https://images.unsplash.com/photo-1616070698578-e5e634af7e8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     description:
         "The Nintendo Switch system transforms from home console to handheld, letting you play your favorite games at home or on the go. It includes a dock for connecting to your TV, as well as removable Joy-Con™ controllers that you can share with a friend for two-player fun.",
-    price: 299.99,
+    price: 299,
     countInStock: 10,
     },
     {
@@ -23,7 +23,7 @@ const products = [
         "https://images.unsplash.com/photo-1618556679398-486ba2cf2e89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     description:
         "Introducing Nintendo Switch™ Lite, a new version of the Nintendo Switch system that's optimized for personal, handheld play. Nintendo Switch Lite is a small and light Nintendo Switch system at a great price. With a built-in +Control Pad, and a sleek, unibody design, Nintendo Switch Lite is great for on-the-go gaming.",
-    price: 1300,
+    price: 199,
     countInStock: 199,
     },
     {
