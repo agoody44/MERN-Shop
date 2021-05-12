@@ -24,6 +24,10 @@ const CartScreen = () => {
         dispatch(removeFromCart(id));
     }
 
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    }
+
     return (
         <div className='cartscreen'>
             <div className='cartscreen_left'>
@@ -45,7 +49,7 @@ const CartScreen = () => {
 
             <div className='cartscreen_right'>
                 <div className='cartscreen_info'>
-                    <p>Subtotal (0) items</p>
+                    <p>Subtotal ({getCartCount()}) items</p>
                     <p>$299.99</p>
                 </div>
                 <div>
