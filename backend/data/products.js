@@ -38,7 +38,7 @@ const products = [
     {
     name: "Xbox Series X",
     imageUrl:
-        "https://images.unsplash.com/photo-1607853827120-6847830b38b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=581&q=80",
+        "https://images.unsplash.com/photo-1600848478834-e478f4c6bfcc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
     description:
         "The Xbox Series X covers all bases for both physical media and digital distribution, with an optical drive that supports up to Ultra HD Blu-ray discs, and a 1TB SSD.",
     price: 499,
