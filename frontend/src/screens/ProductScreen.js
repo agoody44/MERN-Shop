@@ -1,21 +1,46 @@
 import './ProductScreen.css'
+import { useState, useEffect } from 'react';
+import { useDispatch, useSelector, useStore } from 'react-redux';
 
-const ProductScreen = () => {
+
+// Actions
+import { getProductDetails } from '../redux/actions/productActions';
+import { addToCart } from '../redux/actions/cartActions';
+
+
+const ProductScreen = ({ match, history }) => {
+
+    const [ qty, setQty ] = useState(1);
+    const dispatch = useDispatch();
+
+    const productDetails = useSelector(state => state.getProductDetails);
+    const { loading, error, product } = productDetails;
+
+    useEffect(() => {
+        if(product && match.params.id !== product._id ) {
+            dispatch(getProductDetails(match.params.id))
+        }
+    }, [dispatch, product, match]); 
+
+
     return (
         <div className='productscreen'>
-            <div className='productscreen_left'>
+            {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
+                <>
+                <div className='productscreen_left'>
                 <div className='left_image'>
                     <img 
-                    src="https://images.unsplash.com/photo-1616070698578-e5e634af7e8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="product name"
+                    src={product.imageUrl} 
+                    alt={product.name}
                     />
                 </div>
 
 
                 <div className="left_info">
-                    <p className='left_name'>Nintendo Swith</p>
-                    <p>Price: 299.99</p>
+                    <p className='left_name'>{product.name}</p>
+                    <p>Price: ${product.price}</p>
                     <p>
-                    Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    Description: {product.description}</p>
                 </div>
             </div>
 
@@ -42,6 +67,9 @@ const ProductScreen = () => {
 
                 </div>
             </div>
+                </>
+            )}
+            
         </div>
     )
 }
