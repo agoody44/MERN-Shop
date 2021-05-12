@@ -47,7 +47,7 @@ const ProductScreen = ({ match, history }) => {
                     <p>Price: ${product.price}</p>
                     <p>
                     Description: {product.description}</p>
-                    <p>Return to previous screen <Link to='/'>Go Back</Link></p>
+                    <p>Return to previous screen<Link to='/'>Go Back</Link></p>
                 </div>
 
             </div>
