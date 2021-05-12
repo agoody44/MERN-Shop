@@ -1,6 +1,6 @@
 import './ProductScreen.css'
 import { useState, useEffect } from 'react';
-import { useDispatch, useSelector, useStore } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 
 
 // Actions
