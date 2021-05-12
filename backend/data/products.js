@@ -27,30 +27,30 @@ const products = [
     countInStock: 199,
     },
     {
-    name: "Amazon Alexa",
+    name: "Xbox Series S",
     imageUrl:
-        "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+        "https://images.unsplash.com/photo-1604586376807-f73185cf5867?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     description:
-        "It is capable of voice interaction, music playback, making to-do lists, setting alarms, streaming podcasts, playing audiobooks, and providing weather, traffic, sports, and other real-time information, such as news. Alexa can also control several smart devices using itself as a home automation system.",
-    price: 50,
+        "The Xbox Series S is an all-digital gaming console for disc-free gaming. Disc-based games are not compatible with Xbox Series S.",
+    price: 299,
     countInStock: 25,
     },
     {
-    name: "Audio Technica Headphones",
+    name: "Xbox Series X",
     imageUrl:
-        "https://images.unsplash.com/photo-1558756520-22cfe5d382ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1607853827120-6847830b38b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=581&q=80",
     description:
-        "Outfitted with 45mm large-aperture dynamic drivers and an over-ear, closed-back design, the ATH-M50x headphones deliver clarity, deep bass, and extended bandwidth (15 Hz to 28 kHz) while isolating you from outside sounds.",
-    price: 233,
+        "The Xbox Series X covers all bases for both physical media and digital distribution, with an optical drive that supports up to Ultra HD Blu-ray discs, and a 1TB SSD.",
+    price: 499,
     countInStock: 4,
     },
     {
-    name: "JBL FLIP 4",
+    name: "PC",
     imageUrl:
-        "https://images.unsplash.com/photo-1564424224827-cd24b8915874?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+        "https://images.unsplash.com/photo-1613258176465-eb77f3a050d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     description:
-        "JBL Flip 4 is the next generation in the award-winning Flip series; it is a portable Bluetooth speaker that delivers surprisingly powerful stereo sound. This compact speaker is powered by a 3000mAh rechargeable Li-ion battery that offers up to 12 hours of continuous, high-quality audio playtime.",
-    price: 140,
+        "Gaming Master Race.",
+    price: 2000,
     countInStock: 10,
     },
 ];
