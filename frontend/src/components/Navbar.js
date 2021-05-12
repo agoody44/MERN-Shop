@@ -16,7 +16,7 @@ const Navbar = ({click}) => {
         <nav className='navbar'>
             {/*/ Logo */} 
             <div className='navbar_logo'>
-                <h2>Shopping Cart</h2>
+                <h2>Console Shopping</h2>
             </div>
 
             {/*/ Links */}

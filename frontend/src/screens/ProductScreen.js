@@ -1,6 +1,7 @@
 import './ProductScreen.css'
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector} from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 // Actions
@@ -46,7 +47,9 @@ const ProductScreen = ({ match, history }) => {
                     <p>Price: ${product.price}</p>
                     <p>
                     Description: {product.description}</p>
+                    <p>Return to previous screen <Link to='/'>Go Back</Link></p>
                 </div>
+
             </div>
 
             <div className='productscreen_right'>
