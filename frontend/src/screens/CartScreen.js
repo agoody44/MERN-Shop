@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import{ Link } from 'react-router-dom';
 
 // Actions
-import {addToCart} from '../redux/actions/cartActions';
+import {addToCart, removeFromCart } from '../redux/actions/cartActions';
 
 
 const CartScreen = () => {
@@ -18,6 +18,10 @@ const CartScreen = () => {
 
     const qtyChangeHandler = (id, qty) => {
         dispatch(addToCart(id, qty))
+    }
+
+    const removeHandler = (id) => {
+        dispatch(removeFromCart(id));
     }
 
     return (
@@ -32,7 +36,10 @@ const CartScreen = () => {
                     <CartItem 
                     key={item.product}
                     item={item} 
-                    qtyChangeHandler={qtyChangeHandler} />
+                    qtyChangeHandler={qtyChangeHandler}
+                    removeHandler={removeHandler}
+                    
+                    />
                 ))}
             </div>
 
